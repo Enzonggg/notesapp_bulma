@@ -1,0 +1,80 @@
+:root {
+  --blossom-pink: #f7a8c6;
+  --blossom-pink-2: #ffb3d1;
+  --blossom-lavender: #c3b1e1;
+  --blossom-lilac: #e5d9f2;
+  --blossom-rose: #ffe0eb;
+  --blossom-deep: #7a5fa3;
+}
+
+html,
+body {
+  font-family: 'Quicksand', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #fff8fb 60%, #fff 100%);
+  color: #3a2f45;
+}
+
+.navbar {
+  backdrop-filter: saturate(140%) blur(6px);
+}
+
+.brand-text {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero-gradient {
+  background: radial-gradient(1400px 600px at 10% -10%, var(--blossom-rose), transparent 60%),
+              radial-gradient(1000px 500px at 100% 0%, var(--blossom-lilac), transparent 50%),
+              linear-gradient(135deg, var(--blossom-pink-2), var(--blossom-lavender));
+  color: #4a375a;
+}
+
+.soft-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(199, 138, 178, 0.2);
+}
+
+.is-gradient,
+.button.is-gradient {
+  background-image: linear-gradient(135deg, var(--blossom-pink), var(--blossom-lavender));
+  color: #fff;
+  border: none;
+}
+.button.is-gradient:hover {
+  filter: brightness(1.05);
+}
+
+.tag.is-soft {
+  background-color: var(--blossom-rose);
+  color: #7a5fa3;
+  border: 1px solid #f4c2d7;
+}
+
+.soft-footer {
+  background: #fff;
+  border-top: 1px solid #f5e8f8;
+}
+
+.has-text-pink {
+  color: var(--blossom-pink) !important;
+}
+
+/* Form tweaks */
+.input:focus,
+.textarea:focus,
+.select select:focus {
+  border-color: var(--blossom-pink);
+  box-shadow: 0 0 0 0.125em rgba(247, 168, 198, 0.25);
+}
+
+/* Decorative blobs */
+.blob {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(30px);
+  opacity: 0.4;
+}
+.blob.blob-pink { background: var(--blossom-pink-2); }
+.blob.blob-lav { background: var(--blossom-lavender); }
